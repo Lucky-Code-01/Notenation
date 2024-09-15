@@ -1,0 +1,218 @@
+.note-container{
+    width: 100rem;
+    margin-top: 4rem;
+    padding: 1rem;
+}
+
+.navbar{
+    width: 100%;
+    height: 6rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: space-between;
+}
+
+.logo-info{
+    display: flex;
+    align-items: center;
+}
+
+.logo{
+    width: 8rem;
+    height: 8rem;
+}
+
+.header{
+    font-size: 4rem;
+    font-family:Harlow Solid;
+    margin-left: -1rem;
+}
+
+.darkmode{
+    background-color: lightgray;
+    color: black;
+    font-weight: 600;
+    border-radius: 1rem;
+    padding: 0.6rem 1rem;
+    font-size: 1.8rem;
+}
+
+/* search bar here */
+.search-div{
+    width: 100%;
+    height: 4rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+}
+
+.searchform{
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.search-box{
+    width: 100%;
+    color: black;
+    font-size: 1.4rem;
+    padding: 0rem 1rem;
+    outline: none;
+    border-top-right-radius: 2rem;
+    border-bottom-right-radius: 2rem;
+    background-color: lightgray;
+}
+
+.search-btn{
+    background-color: lightgray;
+    border:none;
+    outline: none;
+    color:black;
+    padding: 1rem;
+    font-size: 1.8rem;
+    cursor: pointer;
+    border-top-left-radius: 2rem;
+    border-bottom-left-radius: 2rem;
+}
+
+/* node list here */
+.nodelist{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.note_box{
+    width: 30rem;
+    height: 20rem;
+    background-color: #7bcbc2;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+.text-box{
+    width: 100%;
+    height: 15rem;
+    overflow: scroll;
+    scrollbar-width: none;
+    font-family: monospace;
+}
+
+.notetext{
+    color: black;
+    font-size: 1.6rem;
+    padding: 1rem;
+}
+
+.inptext{
+    width: 100%;
+    height: 15rem;
+    color: black;
+    border: none;
+    outline: none;
+    resize: none;
+    font-size: 1.4rem;
+    padding: 0.5rem;
+    background: transparent;
+    overflow: scroll;
+    scrollbar-width: none;
+}
+
+.inptext::placeholder{
+    color:#616060;
+}
+
+.note-footer{
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    padding: 1rem;
+}
+
+.extra-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.date{
+    color: black;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+
+.trash{
+    width: 3rem;
+    height: 3rem;
+    cursor: pointer;
+}
+
+/* add box */
+.word{
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 600;
+}
+
+.save{
+    background-color: #148452;
+    color:white;
+    padding: 0.2rem 1.5rem;
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+}
+
+/* color box and color choose */
+.color-note-box{
+    display: flex;
+}
+
+.color-box{
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    justify-content: space-around;
+}
+
+.color-chooser{
+    width: 2rem;
+    height: 2rem;
+    padding: 1rem 1rem;
+    cursor: pointer;
+    border-radius:100%;
+    border: 1px solid transparent;
+}
+
+.selected{
+    border: 1px solid #636363;
+}
+
+
+/* media query  */
+@media (max-width : 360px){
+    html{
+        font-size: 45%;
+    }
+
+    .logo{
+        width: 6rem;
+        height: 6rem;
+    }
+
+    .header{
+        font-size: 3rem;
+    }
+}
+
+
+@media (max-width : 400px){
+    .darkmode{
+        padding: 0.5rem;
+        font-size: 1.6rem;
+    }
+}
