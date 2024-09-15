@@ -84,6 +84,8 @@
     flex-wrap: wrap;
     justify-content: space-around;
     margin-top: 2rem;
+    border: 1px solid red;
+    padding: 1rem;
 }
 
 .note_box{
@@ -209,8 +211,12 @@
     }
 }
 
+@media (max-width : 460px){
+    .note_box{
+        width: 100%;
+        font-size: 1.6rem;
+    }
 
-@media (max-width : 400px){
     .darkmode{
         padding: 0.5rem;
         font-size: 1.6rem;
