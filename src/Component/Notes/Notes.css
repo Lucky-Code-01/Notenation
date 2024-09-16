@@ -196,17 +196,13 @@
 
 /* media query  */
 @media (max-width : 360px){
-    html{
-        font-size: 45%;
-    }
-
     .logo{
         width: 6rem;
         height: 6rem;
     }
 
     .header{
-        font-size: 3rem;
+        font-size: 3.8rem;
     }
 }
 
@@ -231,7 +227,7 @@
 
 
     .darkmode{
-        padding: 0.5rem;
+        padding: 0.8rem 1rem;
         font-size: 1.6rem;
     }
     .color-box{
