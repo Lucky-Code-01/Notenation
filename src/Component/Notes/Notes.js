@@ -121,7 +121,7 @@ export default function Notes() {
                                     <img src={trash} alt="" className='trash' onClick={()=>handleDelete(index)}/>
                                 </div>
                             </div>
-                       </div>}):''
+                       </div>}):''  
         }
         
         {/* add */}

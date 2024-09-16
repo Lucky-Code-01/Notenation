@@ -216,17 +216,25 @@
         height: 40rem;
     }
 
+    .text-box{
+        height: 35rem;
+    }
+
     .notetext{
         font-size: 16px;
     }
     
     .inptext{
         font-size: 16px;
+        height: 35rem;
     }
 
 
     .darkmode{
         padding: 0.5rem;
         font-size: 1.6rem;
+    }
+    .color-box{
+        height: 20rem;
     }
 }
