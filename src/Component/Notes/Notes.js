@@ -4,13 +4,6 @@ import logo from'../Image/notify.png'
 import trash from '../Image/delete.png';
 export default function Notes() {
 
-    // Date and time here
-    const DateAndTime = new Date()
-    const currentMonthName = DateAndTime.toLocaleString('default', { month: 'long' });
-    const currentDate = DateAndTime.getDate();
-    const currentTime = DateAndTime.toLocaleTimeString();
-
-
     // state for text 
     const[text,setText] = useState('');
     const[note,setNote] = useState([]);
@@ -44,8 +37,14 @@ export default function Notes() {
     // handlesave
     const handlesave = ()=>{
         if(text){
+            // Date and time here
+            const DateAndTime = new Date()
+            const currentMonthName = DateAndTime.toLocaleString('default', { month: 'long' });
+            const currentDate = DateAndTime.getDate();
+            const currentTime = DateAndTime.toLocaleTimeString();
+            const saveDate = currentTime + " " + currentDate + " " + currentMonthName;
             const storedNotes = JSON.parse(localStorage.getItem('userNotes')) || [];
-            const updateNote = [...storedNotes,{Id:Date.now(),userNote:text,userColor:boxColor}];
+            const updateNote = [...storedNotes,{Id:Date.now(),userNote:text,userColor:boxColor,time:saveDate}];
             setNote(updateNote);
             localStorage.setItem('userNotes',JSON.stringify(updateNote));
             setText('');    
@@ -117,7 +116,7 @@ export default function Notes() {
                             </div>
                             <div className='note-footer'>
                                 <div className='extra-info'>
-                                    <h1 className='date'>{currentTime + " "+currentDate + " " + currentMonthName}</h1>
+                                    <h1 className='date'>{element.time}</h1>
                                     <img src={trash} alt="" className='trash' onClick={()=>handleDelete(index)}/>
                                 </div>
                             </div>
